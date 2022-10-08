@@ -1,0 +1,17 @@
+{
+  "name": "graphql-nodejs",
+  "version": "1.0.0",
+  "description": "GraphQL server and NodeJS project",
+  "scripts": {
+    "test": "echo \"Error: nod test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "Yaseen Akbari",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^3.10.3",
+    "graphql": "^16.6.0",
+    "lodash": "^4.17.21",
+    "nodemon": "^2.0.20"
+  }
+}
