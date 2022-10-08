@@ -28,6 +28,18 @@ const typeDefs = gql`
     US
   }
 
+  input CreateUserInput {
+    name: String!
+    username: String!
+    age: Int!
+    nationality: NationalityEnum
+  }
+
+  type Mutation {
+    createUser(input: CreateUserInput!): User!
+    deleteUser(id: ID!): User
+  }
+
   type Query {
     users: [User!]!
     user(id: ID!): User
